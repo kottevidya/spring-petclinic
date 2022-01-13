@@ -2,3 +2,5 @@ steps:
 - name: mavenbuild
   entrypoint: mvn
   args: ['mvn', 'package', 'clean', 'install', '-Dmaven.test.skip=true']
+options:
+  logging: CLOUD_LOGGING_ONLY
