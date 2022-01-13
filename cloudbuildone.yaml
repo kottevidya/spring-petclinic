@@ -1,0 +1,4 @@
+steps:
+- name: mavenbuild
+  entrypoint: mvn
+  args: ['mvn', 'package', 'clean', 'install', '-Dmaven.test.skip=true']
