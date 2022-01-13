@@ -1,0 +1,8 @@
+steps:
+- name: mavenbuild
+  entrypoint: mvn
+ # args: ['mvn', 'package', 'clean', 'install', '-Dmaven.test.skip=true']
+  args: ['package','-Dmaven.test.skip=true']
+#logsBucket: 'gs://bucket-logger'
+options:
+  logging: CLOUD_LOGGING_ONLY
